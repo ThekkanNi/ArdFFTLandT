@@ -241,9 +241,11 @@ UINT16 AdcCount = 0;
 void __ISR (_TIMER_5_VECTOR, ipl7AUTO)
 Tmr5Handler (void)
 {
+  
 //  MCU_LEDToggle ();
 //  printf ("%0.3f\n\r", (ADCDATA9 * PIC32_ADC_RESOLUTION));
 //  AdcSamplesForFFT[AdcPingPong][AdcCount] = (ADCDATA9 * PIC32_ADC_RESOLUTION);
+  
   AdcSamplesForFFT[AdcPingPong][AdcCount] = (ADCDATA9);
   AdcCount++;
   if (AdcCount >= LT_DATA_ADC_COUNT_SIZE)
@@ -251,8 +253,12 @@ Tmr5Handler (void)
       AdcCount = 0;
       AdcPingPong ^= 1;
       AdcBufferSend = 1;
+      
     }
+  
+  
   ADCCON3bits.GSWTRG = 1;
+  
   
   IFS0bits.T5IF = 0;
   

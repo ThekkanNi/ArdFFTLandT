@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/default/debug/ArdFFTLandT.X.debug.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>1049728</length>                 
+      <used>22244</used>                     
+      <free>1027484</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>263040</length>                 
+      <used>14212</used>                     
+      <free>248828</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

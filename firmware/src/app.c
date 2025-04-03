@@ -174,10 +174,17 @@ APP_Tasks (void)
 
 //            Timer5Config (160000, 1, 7);    // 6.25 us     6.25us  * 10000 =  62.5  mS
 //            Timer5Config (80000, 1, 7);     // 12.5 us     12.5uS  * 10000 =  125   mS
-            Timer5Config (20000.0, 1, 7);     // 50   us     50.0uS  * 10000 =  500   mS
-//            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
+//            Timer5Config (20000.0, 1, 7);     // 50   us     50.0uS  * 10000 =  500   mS
+            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
 
 //            TIMER  1:1     (0.01 uS  655.35 uS)
+            
+            
+            while(1)
+              {
+                
+                  
+              }
 
             StartTimer5 ();
 
@@ -198,9 +205,9 @@ APP_Tasks (void)
         if (AdcBufferSend)
           {
             MCU_LEDToggle ();
-            Tppindex = (AdcPingPong);
+            Tppindex ^= (AdcPingPong);
             memcpy (&LandTDatatoGui.Packet.Payload.AdcData[0], &AdcSamplesForFFT[Tppindex][0], (LT_DATA_ADC_COUNT_SIZE * 2));
-            U1PutBuff (LandTDatatoGui.TxBuffer, LT_DATA_TO_GUI_TX_SIZE); // 43mS 
+            U1PutBuff (LandTDatatoGui.TxBuffer, LT_DATA_TO_GUI_TX_SIZE); //  
             AdcBufferSend = 0;
           }
 

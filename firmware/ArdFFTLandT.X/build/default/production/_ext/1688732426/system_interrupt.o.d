@@ -118,7 +118,8 @@ build/default/production/_ext/1688732426/system_interrupt.o: \
  ../../../../../../../../microchip/harmony/v2_06/framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Default.h \
  ../../../../../../../../microchip/harmony/v2_06/framework/peripheral/ports/plib_ports_compatibility.h \
  ../src/Pic32MzDelay.h ../src/app.h ../src/UartFile.h ../src/UartSource.h \
- ../src/Adc.h ../src/GuiCommunicationFile.h \
+ ../src/Adc.h ../src/Measurement.h ../src/TimerFile.h \
+ ../src/GuiCommunicationFile.h \
  ../src/system_config/default/system_definitions.h
 
 ../../../../../../../../microchip/harmony/v2_06/framework/system/common/sys_common.h:
@@ -366,6 +367,10 @@ build/default/production/_ext/1688732426/system_interrupt.o: \
 ../src/UartSource.h:
 
 ../src/Adc.h:
+
+../src/Measurement.h:
+
+../src/TimerFile.h:
 
 ../src/GuiCommunicationFile.h:
 

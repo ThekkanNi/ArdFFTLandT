@@ -117,7 +117,8 @@ build/default/production/_ext/1360937237/UartFile.o: ../src/UartFile.c \
  ../../../../../../../../microchip/harmony/v2_06/framework/peripheral/ports/processor/../templates/ports_ChangeNoticeEdgeStatus_Default.h \
  ../../../../../../../../microchip/harmony/v2_06/framework/peripheral/ports/plib_ports_compatibility.h \
  ../src/app.h ../src/Pic32MzDelay.h ../src/UartFile.h ../src/UartSource.h \
- ../src/Adc.h ../src/GuiCommunicationFile.h
+ ../src/Adc.h ../src/Measurement.h ../src/TimerFile.h \
+ ../src/GuiCommunicationFile.h
 
 ../src/app.h:
 
@@ -364,5 +365,9 @@ build/default/production/_ext/1360937237/UartFile.o: ../src/UartFile.c \
 ../src/UartSource.h:
 
 ../src/Adc.h:
+
+../src/Measurement.h:
+
+../src/TimerFile.h:
 
 ../src/GuiCommunicationFile.h:

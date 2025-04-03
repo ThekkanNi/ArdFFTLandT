@@ -172,12 +172,12 @@ APP_Tasks (void)
             AdcInit ();
             __delay_ms (50);
 
-            //            Timer5Config (160000, 1, 7);    // 6.25 us   6.25us * 2000 =  12.5 mS
-//                        Timer5Config (80000, 1, 7);     // 12.5 us   12.5uS * 2000 =  25   mS
-            //            Timer5Config (20000.0, 1, 7);     // 50 us     50.0uS * 2000 =  100  mS
-            Timer5Config (10000.0, 1, 7); // 100 us     100.0uS * 1000 =  100  mS
+//            Timer5Config (160000, 1, 7);    // 6.25 us     6.25us  * 10000 =  62.5  mS
+//            Timer5Config (80000, 1, 7);     // 12.5 us     12.5uS  * 10000 =  125   mS
+            Timer5Config (20000.0, 1, 7);     // 50   us     50.0uS  * 10000 =  500   mS
+//            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
 
-            // timer 1:1     (0.01 uS  655.35 uS)
+//            TIMER  1:1     (0.01 uS  655.35 uS)
 
             StartTimer5 ();
 

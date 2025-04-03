@@ -25,9 +25,9 @@
 
 /******************************* AHRS DATA TO GUI /*******************************/
 
-#define     LT_DATA_ADC_COUNT_SIZE        (1000)
-#define     LT_DATA_TO_GUI_CRC_SIZE       (4 + (LT_DATA_ADC_COUNT_SIZE * 2))            // 4 + (2000 * 2) = 4004
-#define     LT_DATA_TO_GUI_TX_SIZE        (TOTAL_OVERHEAD + LT_DATA_TO_GUI_CRC_SIZE)    // (4004 + 10)    = 4014
+#define     LT_DATA_ADC_COUNT_SIZE        (10000)
+#define     LT_DATA_TO_GUI_CRC_SIZE       (4 + (LT_DATA_ADC_COUNT_SIZE * 2))            // 4 + (10000 * 2) = 20004
+#define     LT_DATA_TO_GUI_TX_SIZE        (TOTAL_OVERHEAD + LT_DATA_TO_GUI_CRC_SIZE)    // (20004 + 10)    = 20014
 
 typedef union
 {
@@ -40,7 +40,7 @@ typedef union
             BYTE CrcBuffer[LT_DATA_TO_GUI_CRC_SIZE];
             struct
             {
-                UINT32 FrameNumb                     __attribute__ ((packed)); 
+                UINT32 FrameNumb                           __attribute__ ((packed)); 
                 UINT16  AdcData[LT_DATA_ADC_COUNT_SIZE]    __attribute__ ((packed));      // It contains ADC measurement of the device about 1000 no.
             };
         }Payload;

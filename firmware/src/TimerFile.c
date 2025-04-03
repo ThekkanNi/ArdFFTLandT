@@ -253,7 +253,6 @@ Tmr5Handler (void)
       AdcCount = 0;
       AdcPingPong ^= 1;
       AdcBufferSend = 1;
-      
     }
   
   ADCCON3bits.GSWTRG = 1;

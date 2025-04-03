@@ -171,22 +171,23 @@ APP_Tasks (void)
 
             AdcInit ();
             __delay_ms (50);
-            
-//            Timer5Config (160000, 1, 7);    // 6.25 us   6.25us * 2000 =  12.5 mS
-//            Timer5Config (80000, 1, 7);     // 12.5 us   12.5uS * 2000 =  25   mS
-//            Timer5Config (20000.0, 1, 7);     // 50 us     50.0uS * 2000 =  100  mS
-            Timer5Config (10000.0, 1, 7);     // 100 us     100.0uS * 1000 =  100  mS
+
+            //            Timer5Config (160000, 1, 7);    // 6.25 us   6.25us * 2000 =  12.5 mS
+//                        Timer5Config (80000, 1, 7);     // 12.5 us   12.5uS * 2000 =  25   mS
+            //            Timer5Config (20000.0, 1, 7);     // 50 us     50.0uS * 2000 =  100  mS
+            Timer5Config (10000.0, 1, 7); // 100 us     100.0uS * 1000 =  100  mS
 
             // timer 1:1     (0.01 uS  655.35 uS)
 
             StartTimer5 ();
-            
-            memcpy(LandTDatatoGui.Packet.Header,HEADER,HEADER_SIZE);
-            memcpy(LandTDatatoGui.Packet.Footer,FOOTER,FOOTER_SIZE);
-            
+
+            memcpy (LandTDatatoGui.Packet.Header, HEADER, HEADER_SIZE);
+            memcpy (LandTDatatoGui.Packet.Footer, FOOTER, FOOTER_SIZE);
+
+            UINT16 AdcSamplesForFFT[2][LT_DATA_ADC_COUNT_SIZE];
             appData.state = APP_STATE_SERVICE_TASKS;
           }
-        
+
         break;
       }
 
@@ -194,15 +195,15 @@ APP_Tasks (void)
     case APP_STATE_SERVICE_TASKS:
       {
 
-        if(AdcBufferSend)
+        if (AdcBufferSend)
           {
             MCU_LEDToggle ();
-            Tppindex =  (AdcPingPong);
-            memcpy(&LandTDatatoGui.Packet.Payload.AdcData[0],&AdcSamplesForFFT[Tppindex][0],LT_DATA_ADC_COUNT_SIZE);
-            U1PutBuff(LandTDatatoGui.TxBuffer,LT_DATA_TO_GUI_TX_SIZE);  // 43mS 
+            Tppindex = (AdcPingPong);
+            memcpy (&LandTDatatoGui.Packet.Payload.AdcData[0], &AdcSamplesForFFT[Tppindex][0], (LT_DATA_ADC_COUNT_SIZE * 2));
+            U1PutBuff (LandTDatatoGui.TxBuffer, LT_DATA_TO_GUI_TX_SIZE); // 43mS 
             AdcBufferSend = 0;
           }
-        
+
         break;
       }
 

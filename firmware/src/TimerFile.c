@@ -256,8 +256,8 @@ Tmr5Handler (void)
       
     }
   
-  
   ADCCON3bits.GSWTRG = 1;
+  
   
   
   IFS0bits.T5IF = 0;

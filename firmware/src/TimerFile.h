@@ -23,10 +23,20 @@
 #define         ENABLE_TIMER4               T4CONbits.ON = 1 
 #define         CLEAR_TIMER4                TMR4 = 0
 
+
+/*
+    7 = 1:256 prescale value
+    6 = 1:64 prescale value
+    5 = 1:32 prescale value
+    4 = 1:16 prescale value
+    3 = 1:8 prescale value
+    2 = 1:4 prescale value
+    1 = 1:2 prescale value
+    0 = 1:1 prescale value 
+*/
+
 #define         TIMER5PS                    0
 #define         TIMER5PS_VALUE              1
-//#define         TIMER5PS                    0
-//#define         TIMER5PS_VALUE              1
 #define         DISABLE_TIMER5              T5CONbits.ON = 0 
 #define         ENABLE_TIMER5               T5CONbits.ON = 1 
 #define         CLEAR_TIMER5                TMR5 = 0 

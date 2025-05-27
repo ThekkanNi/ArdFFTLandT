@@ -194,9 +194,9 @@ Timer5Config (double InterruptFreq, bool InterruptStatus, BYTE Priority)
   IEC0bits.T5IE = InterruptStatus;
   IPC6bits.T5IP = Priority;
   TmrPr5Val = CalcPeriodReg (InterruptFreq, TIMER5PS_VALUE);
-//  PR5 = 1250;
-  PR5 = TmrPr5Val;
-//  printf(">>> %d\n\r",TmrPr5Val);
+ 
+  PR5 = 1330;  // 75187 HZ = 75.1 KHZ
+//  PR5 = TmrPr5Val;
 }
 
 /**
@@ -242,10 +242,15 @@ void __ISR (_TIMER_5_VECTOR, ipl7AUTO)
 Tmr5Handler (void)
 {
   
+  
+  LATFbits.LATF4 = ~ LATFbits.LATF4;   
+  
+  
 //  MCU_LEDToggle ();
 //  printf ("%0.3f\n\r", (ADCDATA9 * PIC32_ADC_RESOLUTION));
 //  AdcSamplesForFFT[AdcPingPong][AdcCount] = (ADCDATA9 * PIC32_ADC_RESOLUTION);
   
+#ifdef TEST    
   AdcSamplesForFFT[AdcPingPong][AdcCount] = (ADCDATA9);
   AdcCount++;
   if (AdcCount >= LT_DATA_ADC_COUNT_SIZE)
@@ -254,11 +259,10 @@ Tmr5Handler (void)
       AdcPingPong ^= 1;
       AdcBufferSend = 1;
     }
+#endif    
+  
   
   ADCCON3bits.GSWTRG = 1;
-  
-  
-  
   IFS0bits.T5IF = 0;
   
   

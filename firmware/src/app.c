@@ -154,6 +154,8 @@ APP_Tasks (void)
             ANSELBbits.ANSB13 = 0; // Clearing Analog
             TRISBbits.TRISB1 = 0; // Debug RX, PIN 15.
             ANSELBbits.ANSB1 = 0; // Clearing Analog
+            TRISFbits.TRISF4 = 0; // PIN 41 FOR TESTING TOGGLE TEST
+            
             /*******************/
             Uart1tInit (0, 0, 921600, 1, 0, 1);
             //            SYS_INT_SourceEnable (INT_SOURCE_USART_1_RECEIVE); // DEBUG UART Receive Enable. 
@@ -175,18 +177,20 @@ APP_Tasks (void)
 //            Timer5Config (160000, 1, 7);    // 6.25 us     6.25us  * 10000 =  62.5  mS
 //            Timer5Config (80000, 1, 7);     // 12.5 us     12.5uS  * 10000 =  125   mS
 //            Timer5Config (20000.0, 1, 7);     // 50   us     50.0uS  * 10000 =  500   mS
-            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
+//            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
 
-//            TIMER  1:1     (0.01 uS  655.35 uS)
+            Timer5Config (0.0, 1, 7);   // 13.33  us     - 75.1 Ksps
+            StartTimer5 ();
             
             
+/*            
             while(1)
               {
-                
-                  
+                LATFbits.LATF4 = ~ LATFbits.LATF4;    // 41 
+                __delay_ms(10); 
+                // work done in above timer
               }
-
-            StartTimer5 ();
+*/
 
             memcpy (LandTDatatoGui.Packet.Header, HEADER, HEADER_SIZE);
             memcpy (LandTDatatoGui.Packet.Footer, FOOTER, FOOTER_SIZE);

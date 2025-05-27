@@ -22,7 +22,8 @@
 
 #define     NO_OF_ADC_CHANNELS_IN_USE       1       // MAXIMUM NO CHANNELS SHOULD NOT EXCEED 14 (MAX NO OF SHARED ADC CHANNELS IN PIC32)
 //#define     ADC_SAMPLING_RATE_IN_SPS        280000       // WARINING :- ADC SAMLING RATE ENTERED HERE SHOULD BE WITHIN THE LIMIT
-#define     ADC_SAMPLING_RATE_IN_SPS        291000       // WARINING :- ADC SAMLING RATE ENTERED HERE SHOULD BE WITHIN THE LIMIT
+//#define     ADC_SAMPLING_RATE_IN_SPS        291000       // WARINING :- ADC SAMLING RATE ENTERED HERE SHOULD BE WITHIN THE LIMIT
+#define     ADC_SAMPLING_RATE_IN_SPS        750000       // WARINING :- ADC SAMLING RATE ENTERED HERE SHOULD BE WITHIN THE LIMIT
 //#define     ADC_SAMPLING_RATE_IN_SPS        100000       // WARINING :- ADC SAMLING RATE ENTERED HERE SHOULD BE WITHIN THE LIMIT
                                                         // 9633 SPS to 666666 SPS.(Cause apart from SAMC register value all
                                                         // ADC configure Parameters are set to a predefined value).

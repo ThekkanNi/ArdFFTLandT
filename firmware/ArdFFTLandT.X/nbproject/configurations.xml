@@ -29,6 +29,8 @@
         <itemPath>../src/Adc.h</itemPath>
         <itemPath>../src/Measurement.h</itemPath>
         <itemPath>../src/TimerFile.h</itemPath>
+        <itemPath>../src/Pic32Dma.h</itemPath>
+        <itemPath>../src/UsbCommunication.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="osal" projectFiles="true">
@@ -51,7 +53,14 @@
           <logicalFolder name="f4" displayName="debug" projectFiles="true">
             <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/debug/sys_debug.h</itemPath>
           </logicalFolder>
-          <logicalFolder name="f5" displayName="int" projectFiles="true">
+          <logicalFolder name="f5" displayName="dma" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/dma/sys_dma.h</itemPath>
+            <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/dma/sys_dma_definitions.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="int" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_private.h</itemPath>
             </logicalFolder>
@@ -118,10 +127,15 @@
         <itemPath>../src/Adc.c</itemPath>
         <itemPath>../src/Measurement.c</itemPath>
         <itemPath>../src/TimerFile.c</itemPath>
+        <itemPath>../src/Pic32Dma.c</itemPath>
+        <itemPath>../src/UsbCommunication.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="framework" projectFiles="true">
         <logicalFolder name="f1" displayName="system" projectFiles="true">
-          <logicalFolder name="f1" displayName="int" projectFiles="true">
+          <logicalFolder name="f1" displayName="dma" projectFiles="true">
+            <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="int" projectFiles="true">
             <logicalFolder name="f1" displayName="src" projectFiles="true">
               <itemPath>../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c</itemPath>
             </logicalFolder>
@@ -189,7 +203,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/system_config/default;../src/default;../../../../../../../../microchip/harmony/v2_06/framework;../src/system_config/default/framework"/>
+                  value="../src;../src/system_config/default;../src/default;../src/system_config/default/framework;../../../../../../../../microchip/harmony/v2_06/framework"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>

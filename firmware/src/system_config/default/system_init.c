@@ -135,6 +135,15 @@ SYSTEM_OBJECTS sysObj;
 // Section: Module Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+//<editor-fold defaultstate="collapsed" desc="SYS_DMA Initialization Data">
+/*** System DMA Initialization Data ***/
+
+const SYS_DMA_INIT sysDmaInit =
+{
+	.sidl = SYS_DMA_SIDL_DISABLE,
+
+};
+// </editor-fold>
 
 // *****************************************************************************
 // *****************************************************************************
@@ -167,6 +176,13 @@ void SYS_Initialize ( void* data )
     SYS_DEVCON_PerformanceConfig(SYS_CLK_SystemFrequencyGet());
 
     /* Initialize Drivers */
+    sysObj.sysDma = SYS_DMA_Initialize((SYS_MODULE_INIT *)&sysDmaInit);
+    SYS_INT_VectorPrioritySet(INT_VECTOR_DMA0, INT_PRIORITY_LEVEL1);
+    SYS_INT_VectorSubprioritySet(INT_VECTOR_DMA0, INT_SUBPRIORITY_LEVEL0);
+
+    SYS_INT_SourceEnable(INT_SOURCE_DMA_0);
+
+
 
     /* Initialize System Services */
     SYS_PORTS_Initialize();

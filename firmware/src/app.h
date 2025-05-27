@@ -73,6 +73,8 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "Adc.h"
 #include "Measurement.h"
 #include "TimerFile.h"
+#include "Pic32Dma.h"
+#include "UsbCommunication.h"
 
 
 #include "GuiCommunicationFile.h"

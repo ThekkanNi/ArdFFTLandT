@@ -69,6 +69,12 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // *****************************************************************************
 // *****************************************************************************
 
+
+void __ISR(_DMA0_VECTOR, ipl1AUTO) _IntHandlerSysDmaCh0(void)
+{          
+    SYS_DMA_Tasks(sysObj.sysDma, DMA_CHANNEL_0);
+}
+
  
 /*******************************************************************************
  End of File

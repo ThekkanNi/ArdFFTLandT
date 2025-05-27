@@ -77,6 +77,9 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
  */
 
 APP_DATA appData;
+BYTE arry[LT_DATA_TO_GUI_TX_SIZE] __attribute__((coherent)) ;
+
+
 
 // *****************************************************************************
 // *****************************************************************************
@@ -113,15 +116,15 @@ APP_DATA appData;
  */
 
 void
-APP_Initialize (void)
+APP_Initialize(void)
 {
-  /* Place the App state machine in its initial state. */
-  appData.state = APP_STATE_INIT;
+    /* Place the App state machine in its initial state. */
+    appData.state = APP_STATE_INIT;
 
 
-  /* TODO: Initialize your application's state machine and other
-   * parameters.
-   */
+    /* TODO: Initialize your application's state machine and other
+     * parameters.
+     */
 }
 
 /******************************************************************************
@@ -133,19 +136,17 @@ APP_Initialize (void)
  */
 
 void
-APP_Tasks (void)
+APP_Tasks(void)
 {
 
-  /* Check the application's current state. */
-  switch (appData.state)
-    {
-      /* Application's initial state. */
+    /* Check the application's current state. */
+    switch (appData.state) {
+        /* Application's initial state. */
     case APP_STATE_INIT:
-      {
+    {
         bool appInitialized = true;
 
-        if (appInitialized)
-          {
+        if (appInitialized) {
 
             /*** PIN CONFIG ****/
             TRISBbits.TRISB14 = 1; // AN9, Analog Input, PIN 29.
@@ -155,81 +156,180 @@ APP_Tasks (void)
             TRISBbits.TRISB1 = 0; // Debug RX, PIN 15.
             ANSELBbits.ANSB1 = 0; // Clearing Analog
             TRISFbits.TRISF4 = 0; // PIN 41 FOR TESTING TOGGLE TEST
-            
+
             /*******************/
-            Uart1tInit (0, 0, 921600, 1, 0, 1);
+            Uart1tInit(0, 0, 921600, 1, 0, 1);
             //            SYS_INT_SourceEnable (INT_SOURCE_USART_1_RECEIVE); // DEBUG UART Receive Enable. 
             __XC_UART = 1; // DEBUG UART 460800
             UINT16 Count = 60;
-            while (Count--)
-              {
-                MCU_LEDToggle ();
-                __delay_ms (50);
-              }
-            printf ("RCON : 0x%x\n\r", RCON);
-            printf ("TIME : %s\n\r", __TIME__);
-            printf ("DATE : %s\n\r", __DATE__);
-            printf ("ARD FFT L&T\n\r");
+            while (Count--) {
+                MCU_LEDToggle();
+                __delay_ms(50);
+            }
 
-            AdcInit ();
-            __delay_ms (50);
+            printf("RCON : 0x%x\n\r", RCON);
+            printf("TIME : %s\n\r", __TIME__);
+            printf("DATE : %s\n\r", __DATE__);
+            printf("ARD FFT L&T\n\r");
 
-//            Timer5Config (160000, 1, 7);    // 6.25 us     6.25us  * 10000 =  62.5  mS
-//            Timer5Config (80000, 1, 7);     // 12.5 us     12.5uS  * 10000 =  125   mS
-//            Timer5Config (20000.0, 1, 7);     // 50   us     50.0uS  * 10000 =  500   mS
-//            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
+            AdcInit();
+            __delay_ms(50);
 
-            Timer5Config (0.0, 1, 7);   // 13.33  us     - 75.1 Ksps
-            StartTimer5 ();
+            //            Timer5Config (160000, 1, 7);    // 6.25 us     6.25us  * 10000 =  62.5  mS
+            //            Timer5Config (80000, 1, 7);     // 12.5 us     12.5uS  * 10000 =  125   mS
+            //            Timer5Config (20000.0, 1, 7);     // 50   us     50.0uS  * 10000 =  500   mS
+            //            Timer5Config (10000.0, 1, 7);   // 100  us     100.0uS * 10000 =  1000  mS
+
+            Timer5Config(0.0, 1, 7); // 13.33  us     - 75.1 Ksps
+
+            StartTimer5();
             
-            
-/*            
-            while(1)
-              {
-                LATFbits.LATF4 = ~ LATFbits.LATF4;    // 41 
-                __delay_ms(10); 
-                // work done in above timer
-              }
-*/
+            UartDmaInit();
+            __delay_ms(1);
 
-            memcpy (LandTDatatoGui.Packet.Header, HEADER, HEADER_SIZE);
-            memcpy (LandTDatatoGui.Packet.Footer, FOOTER, FOOTER_SIZE);
+
+//            while (1);
+
+
+
+
+            /*            
+                        LT_DATA_TO_GUI D;
+            
+                        while(1)
+                          {
+                
+                            printf("TxBuffer     40014       %d\n\r",sizeof(D.TxBuffer) );
+                            printf("CrcBuffer    40004       %d\n\r",sizeof(D.Packet.Payload.CrcBuffer) );
+                
+                            __delay_ms(100); 
+            //                LATFbits.LATF4 = ~ LATFbits.LATF4;    // 41 
+            //                __delay_ms(10); 
+                            // work done in above timer
+                
+                          }
+             */
+
+            memcpy(LandTDatatoGui.Packet.Header, HEADER, HEADER_SIZE);
+            memcpy(LandTDatatoGui.Packet.Footer, FOOTER, FOOTER_SIZE);
 
             UINT16 AdcSamplesForFFT[2][LT_DATA_ADC_COUNT_SIZE];
             appData.state = APP_STATE_SERVICE_TASKS;
-          }
+        }
 
         break;
-      }
+    }
 
 
     case APP_STATE_SERVICE_TASKS:
-      {
+    {
+
+                  /*
+//        BYTE arry[LT_DATA_TO_GUI_TX_SIZE]  __attribute__((coherent));
+        
+        
+        memset(&arry[0], ' ', LT_DATA_TO_GUI_TX_SIZE);
+
+        arry[0] = 'A';
+        arry[1] = 'T';
+        arry[2] = 'W';
+        arry[3] = '#';
+
+        arry[LT_DATA_TO_GUI_TX_SIZE - 3] = 'R';
+        arry[LT_DATA_TO_GUI_TX_SIZE - 2] = '&';
+        arry[LT_DATA_TO_GUI_TX_SIZE - 1] = 'D';
+        arry[LT_DATA_TO_GUI_TX_SIZE - 0] = '#';
+
+        UartDmaInit();
+        __delay_ms(1);
+
+        while (1)
+        {
+            LATFbits.LATF4 = 1;
+         
+            SetSourceAddress(&arry, LT_DATA_TO_GUI_TX_SIZE); // 422 ms
+            StartUartDma0();
+            
+            LATFbits.LATF4 = 0;
+            
+            __delay_ms(50);
+        }
+
+
+
+
+        while (1) 
+        {
+            LATFbits.LATF4 = 1;
+            U1PutBuff(arry, LT_DATA_TO_GUI_TX_SIZE); //  437 ms time
+            LATFbits.LATF4 = 0;
+            __delay_ms(50);
+        }
+
+
+
+
+
+                  */
+
+        /*
+        if(AdcBufferSend)
+        {
+             Tppindex ^= (AdcPingPong);
+            
+             Tppindex ^= Tppindex;
+            
+             memcpy (&LandTDatatoGui.Packet.Payload.AdcData[0], &AdcSamplesForFFT[Tppindex][0], (LT_DATA_ADC_COUNT_SIZE * 2));
+             int i;
+             for(i = 0; i < LT_DATA_ADC_COUNT_SIZE; i++)
+             {
+                 printf(">> %d\t%d\t%d\n\r",Tppindex,i,LandTDatatoGui.Packet.Payload.AdcData[i]);
+             }
+             StopTimer5 ();
+            AdcBufferSend = 0;
+        }
+         */
 
         if (AdcBufferSend)
-          {
-            MCU_LEDToggle ();
+        {
+            //            MCU_LEDToggle ();
+            //            LATFbits.LATF4 = ~ LATFbits.LATF4;   
+            
+            
             Tppindex ^= (AdcPingPong);
-            memcpy (&LandTDatatoGui.Packet.Payload.AdcData[0], &AdcSamplesForFFT[Tppindex][0], (LT_DATA_ADC_COUNT_SIZE * 2));
-            U1PutBuff (LandTDatatoGui.TxBuffer, LT_DATA_TO_GUI_TX_SIZE); //  
+            memcpy(&LandTDatatoGui.Packet.Payload.AdcData[0], &AdcSamplesForFFT[Tppindex][0], (LT_DATA_ADC_COUNT_SIZE * 2));
+            
+//            U1PutBuff(LandTDatatoGui.TxBuffer, LT_DATA_TO_GUI_TX_SIZE); // 433 ms 
+            
+            LATFbits.LATF4 = 1;
+
+            SetSourceAddress(LandTDatatoGui.TxBuffer, LT_DATA_TO_GUI_TX_SIZE); //  422 ms
+            StartUartDma0();
+
+            LATFbits.LATF4 = 0;
+            
+            
             AdcBufferSend = 0;
-          }
+
+        }
+
+
 
         break;
-      }
+    }
 
 
-      /* TODO: implement your application state machine.*/
+        /* TODO: implement your application state machine.*/
 
-      /* The default state should never be executed. */
+        /* The default state should never be executed. */
 
 
     default:
-      {
+    {
 
         /* TODO: Handle error in application's state machine. */
         break;
-      }
+    }
 
 
     }

@@ -6,7 +6,7 @@
 #     Harmony version: 2.06
 #
 #
-# from C:\Users\asus\Desktop\PIC32PROJECTS\MZ\ArdFFTLandT\firmware\ArdFFTLandT.hconfig
+# from C:\Users\nithi\Desktop\PIC32PROJECTS\MZ\ArdFFTLandT\firmware\ArdFFTLandT.hconfig
 #
 CONFIG_APP_INSTANCES=1
 #
@@ -16,7 +16,7 @@ CONFIG_APP_MENU_IDX0=y
 CONFIG_APP_NAME_0="app"
 CONFIG_APP_AUTO_GENERATE_CODE0=n
 #
-# from C:\Users\asus\Desktop\PIC32PROJECTS\MZ\ArdFFTLandT\firmware\ArdFFTLandT.hconfig
+# from C:\Users\nithi\Desktop\PIC32PROJECTS\MZ\ArdFFTLandT\firmware\ArdFFTLandT.hconfig
 #
 CONFIG_USE_EXCEPTION_HANDLER=y
 CONFIG_EXCEPTION_USE_SYS_DEBUG=y
@@ -4336,7 +4336,16 @@ CONFIG_USE_SYS_DEBUG=n
 #
 # from $HARMONY_VERSION_PATH\framework\system\dma\config\sys_dma.hconfig
 #
-CONFIG_USE_SYS_DMA=n
+CONFIG_USE_SYS_DMA=y
+CONFIG_SYS_DMA_SIDL=n
+CONFIG_DRV_DMA_INSTANCES_NUMBER=1
+#
+# from $HARMONY_VERSION_PATH\framework\system\dma\config\sys_dma_chx.ftl
+#
+CONFIG_SYS_DMA_CHANNEL_0=y
+CONFIG_SYS_DMA_CHANNEL_ID_IDX0="DMA_CHANNEL_0"
+CONFIG_SYS_DMA_INTERRUPT_PRIORITY_CH0="INT_PRIORITY_LEVEL1"
+CONFIG_SYS_DMA_INTERRUPT_SUBPRIORITY_CH0="INT_SUBPRIORITY_LEVEL0"
 #
 # from $HARMONY_VERSION_PATH\framework\system\fs\config\sys_fs.hconfig
 #

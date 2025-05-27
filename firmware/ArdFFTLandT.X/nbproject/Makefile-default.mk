@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../src/system_config/default/framework/system/ports/src/sys_ports_static.c ../src/system_config/default/system_init.c ../src/system_config/default/system_interrupt.c ../src/system_config/default/system_exceptions.c ../src/system_config/default/system_tasks.c ../src/app.c ../src/main.c ../src/Pic32MzDelay.c ../src/UartFile.c ../src/UartSource.c ../src/GuiCommunicationFile.c ../src/Adc.c ../src/Measurement.c ../src/TimerFile.c ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c
+SOURCEFILES_QUOTED_IF_SPACED=../src/app.c ../src/main.c ../src/Pic32MzDelay.c ../src/UartFile.c ../src/UartSource.c ../src/GuiCommunicationFile.c ../src/Adc.c ../src/Measurement.c ../src/TimerFile.c ../src/Pic32Dma.c ../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../src/system_config/default/framework/system/ports/src/sys_ports_static.c ../src/system_config/default/system_init.c ../src/system_config/default/system_interrupt.c ../src/system_config/default/system_exceptions.c ../src/system_config/default/system_tasks.c ../src/UsbCommunication.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ${OBJECTDIR}/_ext/1688732426/system_init.o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ${OBJECTDIR}/_ext/1360937237/UartFile.o ${OBJECTDIR}/_ext/1360937237/UartSource.o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ${OBJECTDIR}/_ext/1360937237/Adc.o ${OBJECTDIR}/_ext/1360937237/Measurement.o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d ${OBJECTDIR}/_ext/340578644/sys_devcon_cache_pic32mz.o.d ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d ${OBJECTDIR}/_ext/1688732426/system_init.o.d ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d ${OBJECTDIR}/_ext/1360937237/app.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d ${OBJECTDIR}/_ext/1360937237/UartFile.o.d ${OBJECTDIR}/_ext/1360937237/UartSource.o.d ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d ${OBJECTDIR}/_ext/1360937237/Adc.o.d ${OBJECTDIR}/_ext/1360937237/Measurement.o.d ${OBJECTDIR}/_ext/1360937237/TimerFile.o.d ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ${OBJECTDIR}/_ext/1360937237/UartFile.o ${OBJECTDIR}/_ext/1360937237/UartSource.o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ${OBJECTDIR}/_ext/1360937237/Adc.o ${OBJECTDIR}/_ext/1360937237/Measurement.o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o ${OBJECTDIR}/_ext/1684120524/sys_dma.o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ${OBJECTDIR}/_ext/1688732426/system_init.o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1360937237/app.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d ${OBJECTDIR}/_ext/1360937237/UartFile.o.d ${OBJECTDIR}/_ext/1360937237/UartSource.o.d ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d ${OBJECTDIR}/_ext/1360937237/Adc.o.d ${OBJECTDIR}/_ext/1360937237/Measurement.o.d ${OBJECTDIR}/_ext/1360937237/TimerFile.o.d ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o.d ${OBJECTDIR}/_ext/1684120524/sys_dma.o.d ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d ${OBJECTDIR}/_ext/340578644/sys_devcon_cache_pic32mz.o.d ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d ${OBJECTDIR}/_ext/1688732426/system_init.o.d ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ${OBJECTDIR}/_ext/1688732426/system_init.o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ${OBJECTDIR}/_ext/1360937237/UartFile.o ${OBJECTDIR}/_ext/1360937237/UartSource.o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ${OBJECTDIR}/_ext/1360937237/Adc.o ${OBJECTDIR}/_ext/1360937237/Measurement.o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o
+OBJECTFILES=${OBJECTDIR}/_ext/1360937237/app.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ${OBJECTDIR}/_ext/1360937237/UartFile.o ${OBJECTDIR}/_ext/1360937237/UartSource.o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ${OBJECTDIR}/_ext/1360937237/Adc.o ${OBJECTDIR}/_ext/1360937237/Measurement.o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o ${OBJECTDIR}/_ext/1684120524/sys_dma.o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ${OBJECTDIR}/_ext/340578644/sys_devcon_cache_pic32mz.o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ${OBJECTDIR}/_ext/1688732426/system_init.o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o
 
 # Source Files
-SOURCEFILES=../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../src/system_config/default/framework/system/ports/src/sys_ports_static.c ../src/system_config/default/system_init.c ../src/system_config/default/system_interrupt.c ../src/system_config/default/system_exceptions.c ../src/system_config/default/system_tasks.c ../src/app.c ../src/main.c ../src/Pic32MzDelay.c ../src/UartFile.c ../src/UartSource.c ../src/GuiCommunicationFile.c ../src/Adc.c ../src/Measurement.c ../src/TimerFile.c ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c
+SOURCEFILES=../src/app.c ../src/main.c ../src/Pic32MzDelay.c ../src/UartFile.c ../src/UartSource.c ../src/GuiCommunicationFile.c ../src/Adc.c ../src/Measurement.c ../src/TimerFile.c ../src/Pic32Dma.c ../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c ../src/system_config/default/framework/system/devcon/src/sys_devcon_cache_pic32mz.S ../src/system_config/default/framework/system/ports/src/sys_ports_static.c ../src/system_config/default/system_init.c ../src/system_config/default/system_interrupt.c ../src/system_config/default/system_exceptions.c ../src/system_config/default/system_tasks.c ../src/UsbCommunication.c
 
 
 
@@ -123,222 +123,258 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c  .generated_files/flags/default/b5b383d6259c157d90b3beddae22d1ed92355944 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/639803181" 
-	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d 
-	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d" -o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/flags/default/4bc61b560ae960505ef7df03fb961ecab3bf2d66 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ../src/system_config/default/framework/system/devcon/src/sys_devcon.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c  .generated_files/flags/default/c8e551b84e240f1d6f057e94281581081d8f664b .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/flags/default/c8184b76e998d42954780591afdd4ce3c5534161 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/822048611" 
-	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d 
-	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ../src/system_config/default/framework/system/ports/src/sys_ports_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/flags/default/ed7dbbb7ed668e5e899f89bd327f7d4cc3c20559 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_init.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_init.o ../src/system_config/default/system_init.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/flags/default/741f9a18713596ab05e5a9f9df9294599738a7e6 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ../src/system_config/default/system_interrupt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/flags/default/b3e2e18d8932334f5d0cd8dc5d2cf434645b94de .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ../src/system_config/default/system_exceptions.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/flags/default/2a302639b53105f9c5135da6caf9abec49e642e4 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/default/bdfa69d3f34980507cf36ee71c67d8f370dac766 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/default/c2fd542a3a28771fcae7f68af86cc07057cb8d87 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/e0b87d0aa7ada2f82ed303796557ba0ea419385b .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/37c8dcd0a24f18623d8dcb31e214df06d331b6bd .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o: ../src/Pic32MzDelay.c  .generated_files/flags/default/a38c76e96e4cc09931e07a9e76e4c1419e32dd68 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o: ../src/Pic32MzDelay.c  .generated_files/flags/default/901fb27aba0deb9d6ef450bb063b12ec1f316ffd .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d" -o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ../src/Pic32MzDelay.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d" -o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ../src/Pic32MzDelay.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/UartFile.o: ../src/UartFile.c  .generated_files/flags/default/5949f288c1bd078bcb251ab50cec670fe946a466 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/UartFile.o: ../src/UartFile.c  .generated_files/flags/default/dacacbb39916b434147f5fff8721e62385868cbe .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartFile.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartFile.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartFile.o ../src/UartFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartFile.o ../src/UartFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/UartSource.o: ../src/UartSource.c  .generated_files/flags/default/841fd09736e6e0d2ef9cb9946acb72a829aa6b52 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/UartSource.o: ../src/UartSource.c  .generated_files/flags/default/1d2206d10dd1d8cbe572eb07fcac45a88e1270db .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartSource.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartSource.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartSource.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartSource.o ../src/UartSource.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartSource.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartSource.o ../src/UartSource.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o: ../src/GuiCommunicationFile.c  .generated_files/flags/default/8572a94279552edb36528ff9075bd0240d9322ea .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o: ../src/GuiCommunicationFile.c  .generated_files/flags/default/fcebfd878a79cf429eb2186f92b4c4013f24cddc .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ../src/GuiCommunicationFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ../src/GuiCommunicationFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/Adc.o: ../src/Adc.c  .generated_files/flags/default/39ba063cae03830abb50f9c116bf95c5040b1ced .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Adc.o: ../src/Adc.c  .generated_files/flags/default/e3b43b50f43fca4ed9a6834d4ae6153ae62153fa .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Adc.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Adc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Adc.o.d" -o ${OBJECTDIR}/_ext/1360937237/Adc.o ../src/Adc.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Adc.o.d" -o ${OBJECTDIR}/_ext/1360937237/Adc.o ../src/Adc.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/Measurement.o: ../src/Measurement.c  .generated_files/flags/default/a00a27a2e9d3292e4741b94ed1cf6348d41eec23 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Measurement.o: ../src/Measurement.c  .generated_files/flags/default/139384b8fc988fcc557db943a2bdfce1a0d626d6 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Measurement.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Measurement.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Measurement.o.d" -o ${OBJECTDIR}/_ext/1360937237/Measurement.o ../src/Measurement.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Measurement.o.d" -o ${OBJECTDIR}/_ext/1360937237/Measurement.o ../src/Measurement.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/TimerFile.o: ../src/TimerFile.c  .generated_files/flags/default/61411e0facd1da3e6898d20053d5566b1b659cce .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/TimerFile.o: ../src/TimerFile.c  .generated_files/flags/default/b7ed488657c9d39f352b55d41277d1abd17bed1b .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/TimerFile.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/TimerFile.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/TimerFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ../src/TimerFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/TimerFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ../src/TimerFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o: ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c  .generated_files/flags/default/2ffebfd444b2be5a9060ff79a68fb36c27f1dfed .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Pic32Dma.o: ../src/Pic32Dma.c  .generated_files/flags/default/97d225f63bd81acdac61e448566018a4bdca7e0e .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Pic32Dma.o.d" -o ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o ../src/Pic32Dma.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1684120524/sys_dma.o: ../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c  .generated_files/flags/default/87381b7ca02e7c67b4d52533475d5a8b9e6c5ca2 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1684120524" 
+	@${RM} ${OBJECTDIR}/_ext/1684120524/sys_dma.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1684120524/sys_dma.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1684120524/sys_dma.o.d" -o ${OBJECTDIR}/_ext/1684120524/sys_dma.o ../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o: ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c  .generated_files/flags/default/2a5f4174a0750a53a1b4d2c6665fa5666cf71cc .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1872847683" 
 	@${RM} ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d" -o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d" -o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c  .generated_files/flags/default/b157fd26774cc3cc6818c904af45e713d1a05a4b .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/639803181" 
+	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d 
+	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d" -o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/flags/default/255d2266c2aaa093a558795a8696fab29a106ce9 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ../src/system_config/default/framework/system/devcon/src/sys_devcon.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c  .generated_files/flags/default/f57c856148ed930146e2eaf97ab6f1555a4cb41f .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/flags/default/6f06b6e6b4e6970352644ec203662266a42925b3 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/822048611" 
+	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d 
+	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ../src/system_config/default/framework/system/ports/src/sys_ports_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/flags/default/6f3b9e618baff17f6af1a4f5cfc51ea512c1c057 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_init.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_init.o ../src/system_config/default/system_init.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/flags/default/1e1ccaf56a674ccdf905dcc48eda21a569bdb1be .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ../src/system_config/default/system_interrupt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/flags/default/9bfdaf6c0238a7e461f731f824ed1b233704968f .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ../src/system_config/default/system_exceptions.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/flags/default/641e74305e86308d2a496c4610f00899bd01a329 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1360937237/UsbCommunication.o: ../src/UsbCommunication.c  .generated_files/flags/default/96eb5f5c94508bfac7ca8ea81b9e1ad643ce21ab .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG   -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UsbCommunication.o.d" -o ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o ../src/UsbCommunication.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c  .generated_files/flags/default/425089f33dd31c98379560f92549efedc0ef8e38 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/639803181" 
-	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d 
-	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d" -o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/flags/default/9106f1c8c94a951b88791462e01b896b7c3fc48c .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ../src/system_config/default/framework/system/devcon/src/sys_devcon.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c  .generated_files/flags/default/a371ae6fb7cdace962bcb70d4e3eaf55492a2216 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d 
-	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/flags/default/65cf71818a1212972b94c375a376c253eb7c2fa7 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/822048611" 
-	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d 
-	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ../src/system_config/default/framework/system/ports/src/sys_ports_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/flags/default/cbbfd824cc4dfcd23c33b263ca7fff1087c78969 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_init.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_init.o ../src/system_config/default/system_init.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/flags/default/34c2f99e8c9643385932881ef1d9d35b58c974bb .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ../src/system_config/default/system_interrupt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/flags/default/ecce23a9e91bff5ba37395cdc7c339a104635961 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ../src/system_config/default/system_exceptions.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/flags/default/b07d1e503a940eacd0084f1b900bf18d419cbe8e .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
-	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
-	
-${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/default/f07ee089faee766a375f44cf185b69e0dec96f20 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/app.o: ../src/app.c  .generated_files/flags/default/ccacb4b9a9d28dcaa81a1d1c920472bf72c2bab3 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/app.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/app.o.d" -o ${OBJECTDIR}/_ext/1360937237/app.o ../src/app.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/11cee7e35f9205395521d53e822f01aedf8825e8 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/default/e9cc5c787db5a7fd15c98bf0162450b6e8e06f8f .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o: ../src/Pic32MzDelay.c  .generated_files/flags/default/625a7373f24751201d8e7c97d8a879f07bba1da .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o: ../src/Pic32MzDelay.c  .generated_files/flags/default/d97fc9ec9fbd5461683ea8c32feb54e7bfbab283 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d" -o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ../src/Pic32MzDelay.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o.d" -o ${OBJECTDIR}/_ext/1360937237/Pic32MzDelay.o ../src/Pic32MzDelay.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/UartFile.o: ../src/UartFile.c  .generated_files/flags/default/172095afdc35616946dcbd2b606e91e6449e57bd .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/UartFile.o: ../src/UartFile.c  .generated_files/flags/default/d70d529fee0d6d7c1626fb41b10bcaf8b17f4068 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartFile.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartFile.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartFile.o ../src/UartFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartFile.o ../src/UartFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/UartSource.o: ../src/UartSource.c  .generated_files/flags/default/a65b0d6945cefc208162cd9791771ffc2bcd876 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/UartSource.o: ../src/UartSource.c  .generated_files/flags/default/f9e356f0881885b1210d2a94dfc2e4a624119b6e .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartSource.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/UartSource.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartSource.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartSource.o ../src/UartSource.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UartSource.o.d" -o ${OBJECTDIR}/_ext/1360937237/UartSource.o ../src/UartSource.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o: ../src/GuiCommunicationFile.c  .generated_files/flags/default/8115d2c2dffbed7ec56ee829de567e75230802bd .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o: ../src/GuiCommunicationFile.c  .generated_files/flags/default/cf01bde6f5fa5601b6d8cd7537eb853dde25e9f5 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ../src/GuiCommunicationFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/GuiCommunicationFile.o ../src/GuiCommunicationFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/Adc.o: ../src/Adc.c  .generated_files/flags/default/d051dbcc062eac7ec718b17ff426d62fe3b2bead .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Adc.o: ../src/Adc.c  .generated_files/flags/default/dbee06fa2f5e720e9e87bac16bc04219b9cdad92 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Adc.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Adc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Adc.o.d" -o ${OBJECTDIR}/_ext/1360937237/Adc.o ../src/Adc.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Adc.o.d" -o ${OBJECTDIR}/_ext/1360937237/Adc.o ../src/Adc.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/Measurement.o: ../src/Measurement.c  .generated_files/flags/default/76289e7de88291402b50fddca4cdffedb49d6f8e .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Measurement.o: ../src/Measurement.c  .generated_files/flags/default/c137507336c44938741b0216c067fee598f4b1f1 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Measurement.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/Measurement.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Measurement.o.d" -o ${OBJECTDIR}/_ext/1360937237/Measurement.o ../src/Measurement.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Measurement.o.d" -o ${OBJECTDIR}/_ext/1360937237/Measurement.o ../src/Measurement.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1360937237/TimerFile.o: ../src/TimerFile.c  .generated_files/flags/default/ff7ca1810097d547a6e5456f59c4f57278396785 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/TimerFile.o: ../src/TimerFile.c  .generated_files/flags/default/149c281d2f565150c1f67e746efadb5c57684a79 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/TimerFile.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/TimerFile.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/TimerFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ../src/TimerFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/TimerFile.o.d" -o ${OBJECTDIR}/_ext/1360937237/TimerFile.o ../src/TimerFile.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o: ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c  .generated_files/flags/default/3aa04ba4c6147cf7b432bf3e7afa0f1526b980bf .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+${OBJECTDIR}/_ext/1360937237/Pic32Dma.o: ../src/Pic32Dma.c  .generated_files/flags/default/ffcd821bfcdb3dc00f2a685efe346c1848ea9c0c .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/Pic32Dma.o.d" -o ${OBJECTDIR}/_ext/1360937237/Pic32Dma.o ../src/Pic32Dma.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1684120524/sys_dma.o: ../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c  .generated_files/flags/default/f763960b44304a221a1d10414234b209b18e3399 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1684120524" 
+	@${RM} ${OBJECTDIR}/_ext/1684120524/sys_dma.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1684120524/sys_dma.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1684120524/sys_dma.o.d" -o ${OBJECTDIR}/_ext/1684120524/sys_dma.o ../../../../../../../../microchip/harmony/v2_06/framework/system/dma/src/sys_dma.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o: ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c  .generated_files/flags/default/875328d16fcc4507ffc33f9bf3784c98f137260b .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
 	@${MKDIR} "${OBJECTDIR}/_ext/1872847683" 
 	@${RM} ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../../../../../../../../microchip/harmony/v2_06/framework" -I"../src/system_config/default/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d" -o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o.d" -o ${OBJECTDIR}/_ext/1872847683/sys_int_pic32.o ../../../../../../../../microchip/harmony/v2_06/framework/system/int/src/sys_int_pic32.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o: ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c  .generated_files/flags/default/6429a3606faae6c406941cb2277791d97aa69257 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/639803181" 
+	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d 
+	@${RM} ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o.d" -o ${OBJECTDIR}/_ext/639803181/sys_clk_pic32mz.o ../src/system_config/default/framework/system/clk/src/sys_clk_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/340578644/sys_devcon.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon.c  .generated_files/flags/default/f32b7a84dda5c3e1d3c9da5c854b2dfb0faad41e .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o.d 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon.o ../src/system_config/default/framework/system/devcon/src/sys_devcon.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o: ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c  .generated_files/flags/default/4093e96f61cf561e2b03f5db1f0408b63283694d .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/340578644" 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d 
+	@${RM} ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o.d" -o ${OBJECTDIR}/_ext/340578644/sys_devcon_pic32mz.o ../src/system_config/default/framework/system/devcon/src/sys_devcon_pic32mz.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/822048611/sys_ports_static.o: ../src/system_config/default/framework/system/ports/src/sys_ports_static.c  .generated_files/flags/default/230ccb452e3f4ff308b9889b9ee89cd30ac832ba .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/822048611" 
+	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d 
+	@${RM} ${OBJECTDIR}/_ext/822048611/sys_ports_static.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/822048611/sys_ports_static.o.d" -o ${OBJECTDIR}/_ext/822048611/sys_ports_static.o ../src/system_config/default/framework/system/ports/src/sys_ports_static.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_init.o: ../src/system_config/default/system_init.c  .generated_files/flags/default/dd4f0fa46e3a01f4f94bf6ced49204a0660b9408 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_init.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_init.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_init.o ../src/system_config/default/system_init.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_interrupt.o: ../src/system_config/default/system_interrupt.c  .generated_files/flags/default/36c5896ac601f6f51f6a65a34527e37022c910af .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_interrupt.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_interrupt.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_interrupt.o ../src/system_config/default/system_interrupt.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_exceptions.o: ../src/system_config/default/system_exceptions.c  .generated_files/flags/default/6b8d7078f86e570c34aacbb285bb276b4b50dda2 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_exceptions.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_exceptions.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_exceptions.o ../src/system_config/default/system_exceptions.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1688732426/system_tasks.o: ../src/system_config/default/system_tasks.c  .generated_files/flags/default/786b99ef5a52c5e8c47a295a06a8ff78e2fdbc3d .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1688732426" 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1688732426/system_tasks.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1688732426/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1688732426/system_tasks.o ../src/system_config/default/system_tasks.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
+	
+${OBJECTDIR}/_ext/1360937237/UsbCommunication.o: ../src/UsbCommunication.c  .generated_files/flags/default/1f55907f9197077cc36e12897caba0ba29085941 .generated_files/flags/default/5a43ce0a1a49bfdd311d19ad35e513e395645c1e
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -ffunction-sections -O1 -I"../src" -I"../src/system_config/default" -I"../src/default" -I"../src/system_config/default/framework" -I"../../../../../../../../microchip/harmony/v2_06/framework" -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/UsbCommunication.o.d" -o ${OBJECTDIR}/_ext/1360937237/UsbCommunication.o ../src/UsbCommunication.c    -DXPRJ_default=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)    
 	
 endif
 

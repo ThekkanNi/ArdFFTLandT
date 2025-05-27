@@ -3,10 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/app.c</file>
+            <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/GuiCommunicationFile.c</file>
             <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/app.h</file>
             <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/TimerFile.c</file>
+            <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/UsbCommunication.c</file>
+            <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/app.c</file>
             <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/TimerFile.h</file>
+            <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/UsbCommunication.h</file>
+            <file>file:/C:/Users/nithi/Desktop/PIC32PROJECTS/MZ/ArdFFTLandT/firmware/src/GuiCommunicationFile.h</file>
         </group>
     </open-files>
 </project-private>

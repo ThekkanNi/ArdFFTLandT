@@ -101,6 +101,46 @@ extern "C" {
 #define SYS_PORT_B_CNPD         0x0000
 #define SYS_PORT_B_CNEN         0x0000
 
+#define SYS_PORT_C_ANSEL        0xFFFF
+#define SYS_PORT_C_TRIS         0xFFFF
+#define SYS_PORT_C_LAT          0x0000
+#define SYS_PORT_C_ODC          0x0000
+#define SYS_PORT_C_CNPU         0x0000
+#define SYS_PORT_C_CNPD         0x0000
+#define SYS_PORT_C_CNEN         0x0000
+
+#define SYS_PORT_D_ANSEL        0xF1C0
+#define SYS_PORT_D_TRIS         0xFFFF
+#define SYS_PORT_D_LAT          0x0000
+#define SYS_PORT_D_ODC          0x0000
+#define SYS_PORT_D_CNPU         0x0000
+#define SYS_PORT_D_CNPD         0x0000
+#define SYS_PORT_D_CNEN         0x0000
+
+#define SYS_PORT_E_ANSEL        0xFFF0
+#define SYS_PORT_E_TRIS         0xFFFF
+#define SYS_PORT_E_LAT          0x0000
+#define SYS_PORT_E_ODC          0x0000
+#define SYS_PORT_E_CNPU         0x0000
+#define SYS_PORT_E_CNPD         0x0000
+#define SYS_PORT_E_CNEN         0x0000
+
+#define SYS_PORT_F_ANSEL        0xFFC4
+#define SYS_PORT_F_TRIS         0xFFFF
+#define SYS_PORT_F_LAT          0x0000
+#define SYS_PORT_F_ODC          0x0000
+#define SYS_PORT_F_CNPU         0x0000
+#define SYS_PORT_F_CNPD         0x0000
+#define SYS_PORT_F_CNEN         0x0000
+
+#define SYS_PORT_G_ANSEL        0xFFFF
+#define SYS_PORT_G_TRIS         0xFFFF
+#define SYS_PORT_G_LAT          0x0000
+#define SYS_PORT_G_ODC          0x0000
+#define SYS_PORT_G_CNPU         0x0000
+#define SYS_PORT_G_CNPD         0x0000
+#define SYS_PORT_G_CNEN         0x0000
+
 
 /*** Interrupt System Service Configuration ***/
 #define SYS_INT                     true

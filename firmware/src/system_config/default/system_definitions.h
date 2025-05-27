@@ -52,6 +52,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 #include "system/devcon/sys_devcon.h"
 #include "system/clk/sys_clk.h"
 #include "system/int/sys_int.h"
+#include "system/dma/sys_dma.h"
 #include "system/ports/sys_ports.h"
 #include "app.h"
 
@@ -87,6 +88,7 @@ extern "C" {
 
 typedef struct
 {
+    SYS_MODULE_OBJ  sysDma;
 
 
 } SYSTEM_OBJECTS;

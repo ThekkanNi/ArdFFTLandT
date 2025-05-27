@@ -103,7 +103,7 @@ typedef union
 void UartDmaInit() ;
 void SetSourceAddress(void *Address, UINT16 Size);
 void StartUartDma0();
-void StopMemtoMemDma0();
+void StopUartDma0();
 
 
 
